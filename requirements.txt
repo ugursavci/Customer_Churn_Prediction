@@ -1,3 +1,4 @@
+python==3.8.12
 anyio==3.5.0
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
