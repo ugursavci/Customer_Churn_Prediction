@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Customer Churn Prediction</title>
+      <br><br>
+
+  </head>
+  <body>
+      <h1 style="color:red;font-family:Tahoma;text-align:center">{{ prediction_text }}</h1>
+<style media="screen">
+      body{text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1613375920388-f1f70f341f8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+            background-size:100% 100%;
+      }
+
+      div[class*="col"]
+      {
+        background-color: ;
+        border:  ;
+
+
+      }
+      div[class*="no_background"]
+      {
+        background-color: ;
+        border: ;
+
+
+      }
+
+      h5{color: black;}
+      h4{text-align: left;}
+
+      input {
+        border: 1px solid #2C548F;
+        border-radius: 7px;
+        background-color: #D2D8D3;
+        padding: 10px 12px; }
+
+      button {
+          border: 2px solid #2C548F;
+          border-radius: 9px;
+          background-color: #D2D8D3;
+          padding: 10px 12px;
+          width : 10%;
+          font-size: 15px;}
+      select.form-control{
+        border: 1px solid #2C548F;
+        border-radius: 7px;
+        background-color: #D2D8D3;
+        padding: 10px 12px;
+        width: 200px;
+        margin: 0 auto;
+        float: none;
+        }
+      select.form-control2{
+        border: 1px solid #2C548F;
+        border-radius: 7px;
+        background-color: ;
+        padding: 10px 12px;
+        width: 200px;
+        margin: 0 auto;
+        float: none;
+        }
+
+
+
+
+
+
+
+</style>
+
+<h6>Created by Ugur Savci</h6>
+    <h1>Customer Churn Prediction</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+    <div class="container">
+      <form action="\predict" method="post">
+              <div class="row">
+                <div class="col-4">
+                  <h5>Contract</h5>
+                    <select name="Contract" class="selectpicker form-control" data-live-search="true">
+                        <option value="Monthly">Monthly</option>
+                        <option value="One Year">One Year</option>
+                        <option value="Two Years">Two Years</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                  <h5>Tenure</h5>
+                  <input type="text" name="Tenure" placeholder="e.g.12" required="required" />
+                </div>
+                <div class="col-4">
+                  <h5>Tech Support</h5>
+                    <select name="TechSupport" class="selectpicker form-control" data-live-search="true">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="No Internet Service">No Internet Service</option>
+                    </select>
+
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-4">
+                  <h5>Internet Service</h5>
+                    <select name="Internet Service" class="selectpicker form-control" data-live-search="true">
+                        <option value="DSL">DSL</option>
+                        <option value="Fiber optic">Fiber Optic</option>
+                        <option value="No Internet Service">No Internet service</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                  <h5>Online Security</h5>
+                  <select name="Online Security" class="selectpicker form-control" data-live-search="true">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="No Internet Service">No Internet Service</option>
+                  </select>
+                </div>
+                <div class="col-4">
+                <h5>Device Protection</h5>
+                <select name="Device Protection" class="selectpicker form-control" data-live-search="true">
+                <option value="Yes">Yes</option>
+                <option value="Yes">No</option>
+                <option value="No Internet Service">No Internet Service</option>
+
+                </select>
+
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-4">
+                  <h5>Monthly Charges</h5>
+                    <input type="text" name="Monthly Charges" placeholder="e.g. 29.90" required="required" />
+                </div>
+                <div class="col-4">
+                  <h5>Payment Method</h5>
+                  <select name="Payment Method" class="selectpicker form-control" data-live-search="true">
+                  <option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+                  <option value="Credit card (automatic)">Credit card (automatic)</option>
+                  <option value="Electronic check">Electronic check</option>
+                  <option value="Mailed check">Mailed check</option>
+                  </select>
+
+                </div>
+                <div class="col-4">
+                  <h5>Streaming Movies</h5>
+                  <select name="Streaming Movies" class="selectpicker form-control" data-live-search="true">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="No Internet Service">No Internet Service</option>
+                  </select>
+                </div>
+
+                </div>
+              <br>
+                <div class="no_background">
+                  <h5>Online Backup</h5>
+                  <select name="Online Backup" class="selectpicker form-control" data-live-search="true">
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                      <option value="No Internet Service">No Internet Service</option>
+                  </select>
+                </div>
+
+
+
+
+
+
+
+
+
+              <br>
+
+              <button type="submit" class="btn btn-primary">Predict</button>
+
+
+
+      </form>
+
+
+
+
+    </div>
+
+  </body>
+</html>
