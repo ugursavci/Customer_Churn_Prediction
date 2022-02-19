@@ -4,11 +4,25 @@
   <br>
   <br>
   
+ 
   
-  To see the web app please click the >>>>> [link](https://churnpredictionapp1.herokuapp.com/)
+ Pleaase click the [here](https://churnpredictionapp1.herokuapp.com/) to see the app
+  <br>
+  <br>
+  <img src='https://github.com/ugursavci/Customer_Churn_Prediction/blob/main/images/images.png' width = 1000 height = 600>
   
   <br>
   <br>
+  
+  <br>
+  <img src='https://github.com/ugursavci/Customer_Churn_Prediction/blob/main/images/images2.png' width = 500 height = 300> <img src='https://github.com/ugursavci/Customer_Churn_Prediction/blob/main/images/images3.png' width = 500 height = 300>
+  
+ <br>
+ <br>
+  <img src='https://github.com/ugursavci/Customer_Churn_Prediction/blob/main/images/images4.png' width = 500 height = 300> <img src='https://github.com/ugursavci/Customer_Churn_Prediction/blob/main/images/images5.png' width = 500 height = 300>
+  
+  <br>
+  
   
   
  
