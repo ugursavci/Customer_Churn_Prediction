@@ -17,7 +17,8 @@
   <br>
   <br>
 
-- Conducted feature engineering, feature selection, building and deployed model via Heroku,Flask and Github.
+- Conducted functional exploratory data analysis 
+- Featyre engineer
 
 
 
