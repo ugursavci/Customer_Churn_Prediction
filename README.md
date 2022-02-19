@@ -4,21 +4,28 @@
   <br>
   <br>
   
+  
+  To see the web app please click the >>>>> [link](https://churnpredictionapp1.herokuapp.com/)
+  
+  <br>
+  <br>
+  
+  
  
-  <p>In the telecom industry, customers are able to choose from multiple service providers and actively switch from one operator to another. In this highly competitive market, the telecommunications industry experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to acquire a new customer than to retain an existing one, customer retention has now become even more important than customer acquisition.</p>
+<h5>In the telecom industry, customers are able to choose from multiple service providers and actively switch from one operator to another. In this highly competitive market, the telecommunications industry experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to acquire a new customer than to retain an existing one, customer retention has now become even more important than customer acquisition.
+<p>For many incumbent operators, retaining high profitable customers is the number one business goal.</h5>
 
-<p>For many incumbent operators, retaining high profitable customers is the number one business goal.</p>
+<h5>To reduce customer churn, telecom companies need to predict which customers are at high risk of churn.</h5>
 
-<p>To reduce customer churn, telecom companies need to predict which customers are at high risk of churn.</p>
-
-<p>In this project, we will analyse customer-level data of a leading telecom firm, build predictive models to identify customers at high risk of churn and identify the main indicators of churn.</p>
+<h5>In this project, we will analyse customer-level data of a leading telecom firm, build predictive models to identify customers at high risk of churn and identify the main indicators of churn.</h5>
   
 
   <br>
   <br>
 
 - Conducted functional exploratory data analysis 
-- Featyre engineer
+- Feature engineering,Feature Selection
+- Model building and deployment.
 
 
 
